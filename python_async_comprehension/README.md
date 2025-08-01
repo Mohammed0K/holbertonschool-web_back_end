@@ -4,8 +4,6 @@ This project covers the concepts of **asynchronous execution** and **asynchronou
 
 ## Learning Objectives
 
-By completing this project, you will be able to:
-
 - Write asynchronous generators in Python
 - Use async comprehensions to collect data asynchronously
 - Type-annotate generators and asynchronous functions
