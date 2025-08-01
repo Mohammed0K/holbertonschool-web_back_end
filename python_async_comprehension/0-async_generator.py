@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Coroutine async_generator that yields random numbers asynchronously."""
+"""Coroutine that yields random numbers asynchronously."""
 
 import asyncio
 import random
