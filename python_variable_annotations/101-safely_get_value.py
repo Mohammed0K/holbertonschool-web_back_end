@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+"""Returns the value for key in dct or default if not found"""
 from typing import Mapping, Any, TypeVar, Union
 
+"""Returns the value for key in dct or default if not found"""
 T = TypeVar("T")
 
 

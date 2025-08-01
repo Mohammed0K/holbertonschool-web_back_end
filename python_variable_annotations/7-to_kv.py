@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Returns a tuple with a string and the square of an int or float"""
 from typing import Union, Tuple
 
 

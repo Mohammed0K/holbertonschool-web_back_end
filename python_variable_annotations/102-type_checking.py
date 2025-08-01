@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Returns a list with each item repeated factor times"""
 from typing import Tuple, List, Any
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""Returns a list of tuples (item, length of item) for each sequence in lst"""
 from typing import Iterable, Sequence, List, Tuple
 
 
