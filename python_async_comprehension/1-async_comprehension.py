@@ -2,9 +2,11 @@
 """Coroutine async_comprehension using async comprehension."""
 
 from typing import List
-from 0-async_generator import async_generator
+from importlib import import_module
+
+async_generator = import_module("0-async_generator").async_generator
 
 
 async def async_comprehension() -> List[float]:
-    """Collect and return 10 random numbers asynchronously."""
-    return [num async for num in async_generator()]
+    """Collect 10 random numbers asynchronously."""
+    return [number async for number in async_generator()]
