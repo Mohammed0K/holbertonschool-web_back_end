@@ -3,7 +3,8 @@
 
 import asyncio
 import time
-from 1-async_comprehension import async_comprehension
+from async_comprehension import async_comprehension
+
 
 async def measure_runtime() -> float:
     """
