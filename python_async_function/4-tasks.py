@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-Module for running multiple task_wait_random concurrently.
-Returns a list of delays in ascending order.
+Module that runs multiple task_wait_random concurrently and returns their delays as a list.
 """
 import asyncio
 from typing import List
 
-task_wait_random = __import__('3-tasks').task_wait_random
+task_wait_random = __import__("3-tasks").task_wait_random
+
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     Spawns task_wait_random n times with max_delay.
-    Returns: List of delays in ascending order.
+    Returns: list of all delays in order of completion.
     """
     tasks = [task_wait_random(max_delay) for _ in range(n)]
-    delays = []
+    delays: List[float] = []
     for task in asyncio.as_completed(tasks):
-        result = await task
-        delays.append(result)
-    return sorted(delays)
+        delay = await task
+        delays.append(delay)
+    return delays
